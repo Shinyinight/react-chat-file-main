@@ -27,8 +27,3 @@ don't kill anyone
 - firebase 9.9.0
 - Feature 3
 
-## :handshake: Contact
-
-Anjit pariyar - [Instagram](https://www.instagram.com/limbo_anj/) - anjitpariyar@gmail.com
-
-Portfolio: [https://anjitpariyar.com.np/](https://anjitpariyar.com.np/)
