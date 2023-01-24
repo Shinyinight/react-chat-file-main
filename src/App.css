@@ -1,0 +1,239 @@
+:root {
+  --primary: #7f4dfc;
+  --yellow: #fce44e;
+  --dark: #1e113d;
+  --br: 16px;
+  --white: #fff;
+}
+@import url("https://use.typekit.net/isb7oln.css");
+
+body {
+  background-color: var(--primary);
+  height: 100vh;
+  position: relative;
+  font-family: acuta, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--dark);
+  font-size: 18px;
+  padding-right: 0 !important;
+}
+body.yellow,
+body.yellow form,
+body.yellow .MuiPopover-paper {
+  background-color: var(--yellow);
+}
+
+body.yellow .chatbox-wrapper.active h2 {
+  background-color: var(--primary);
+  /* color: var(--white); */
+}
+
+body.yellow .MuiPopover-paper .MuiSwitch-colorPrimary.Mui-checked {
+  color: var(--primary);
+}
+body.yellow .MuiPopover-paper .MuiRadio-colorSecondary.Mui-checked,
+body.yellow .MuiPopover-paper .MuiRadio-colorSecondary.Mui-checked + span {
+  color: var(--dark);
+}
+body.dark,
+body.dark form,
+body.dark .MuiPopover-paper,
+body.dark .welcome--part {
+  background-color: #3c3c3c;
+  color: #fff;
+}
+
+body.dark .welcome--part .widget .section__title {
+  background-color: #222;
+}
+
+body.dark .form-control {
+  border-color: #868686;
+  color: #fff;
+}
+
+body.dark .form-control::placeholder,
+body.dark svg,
+body.dark svg *,
+body.dark form button,
+body.dark .MuiPopover-paper .MuiFormControlLabel-root {
+  color: #fff;
+  fill: #fff;
+}
+
+body.dark .chatbox-wrapper.active .chatbox-wrapper-inner,
+body.dark .chat--wrapper .chatbox-wrapper.liked .love {
+  background-color: #fff;
+  color: var(--dark);
+}
+body.dark .MuiPopover-root .MuiPopover-paper,
+body.dark .chatbox-wrapper .chatbox-wrapper-inner {
+  box-shadow: -4px 5px #181818;
+  border-color: #181818;
+}
+body.dark .chat--wrapper .chatbox-wrapper .love {
+  background-color: #3c3c3c;
+  color: var(--white);
+  border-color: #181818;
+  box-shadow: -2px 3px #181818;
+}
+
+.section__rule {
+  width: 90%;
+  margin: 00px auto;
+}
+
+form {
+  position: sticky;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  background-color: var(--primary);
+  z-index: 99;
+  padding: 20px 0;
+  padding-top: 0;
+}
+.form-group {
+  position: relative;
+  display: flex;
+}
+.form-control {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: var(--br);
+  padding: 0 20px;
+  border: 2px solid var(--dark);
+  font-size: 1em;
+  outline: none;
+  box-shadow: none;
+  font-family: acuta, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--dark);
+}
+.form-control::placeholder {
+  color: var(--dark);
+  font-size: 1em;
+  opacity: 1;
+  font-weight: 500;
+}
+button svg {
+  fill: var(--dark);
+}
+.personalized {
+  position: fixed;
+  z-index: 99;
+  top: 10px;
+  right: 5%;
+}
+
+.personalized .MuiButton-text {
+  padding: 10px;
+  min-width: auto;
+}
+.personalized .MuiButton-text svg {
+  height: 24px;
+  width: auto;
+  overflow: visible;
+}
+
+.personalized .MuiButton-text:hover svg {
+  transform: rotate(45deg);
+  transition: 0.3s ease;
+}
+.link {
+  color: currentColor;
+  word-break: break-all;
+}
+
+.close {
+  text-align: right;
+  margin-top: -6px;
+}
+.close svg {
+  height: 28px;
+  width: auto;
+  cursor: pointer;
+}
+.MuiPopover-root .MuiPopover-paper {
+  width: 400px;
+  background-color: var(--primary);
+  color: var(--dark);
+  border-radius: var(--br);
+  padding: 14px;
+  box-shadow: -4px 5px var(--dark);
+  border: 2px solid var(--dark);
+  left: auto !important;
+  right: 28px !important;
+  max-width: 90%;
+}
+.MuiPopover-paper .MuiFormControlLabel-labelPlacementStart {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.MuiPopover-paper .MuiSwitch-colorPrimary.Mui-checked {
+  color: var(--yellow);
+}
+.MuiPopover-paper .MuiFormGroup-root {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.MuiPopover-paper .MuiFormControlLabel-root {
+  margin: 0;
+  color: var(--dark);
+}
+
+.Mui-checked,
+.Mui-checked + span {
+  color: #fff !important;
+}
+
+.MuiPopover-paper .MuiTypography-body1,
+.MuiPopover-paper .MuiFormLabel-root {
+  font-family: acuta, serif;
+}
+
+.MuiTooltip-popper > div {
+  background-color: var(--dark) !important;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --br: 10px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .form-control {
+    height: 46px;
+    /* border-width: 5px; */
+    padding: 0 14px;
+  }
+  .section__rule {
+    width: 95%;
+  }
+
+  button svg {
+    height: 28px;
+    width: auto;
+  }
+
+  .MuiPopover-root .MuiPopover-paper {
+    right: 3px !important;
+  }
+  .MuiFormLabel-root.MuiFormControlLabel-root {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    overflow-y: scroll !important;
+  }
+}
